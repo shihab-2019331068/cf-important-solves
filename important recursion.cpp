@@ -53,7 +53,6 @@ void rec(ll i=0)
 {
     if(i==n){
         foo();
-//        db(A)
         return;
     }
     if(f[i]){
@@ -63,9 +62,6 @@ void rec(ll i=0)
     for(j=0; j<n; j++){
         if(f[j] or i==j)
             continue;
-//        for(k=0; k<3*i; k++)
-//            cout<<" ";
-//        cout<<i<<","<<j <<"\n";
         f[i]=f[j]=1;
         g[i].push_back({j,1});
         g[j].push_back({i,1});
@@ -96,49 +92,4 @@ int main()
     rec();
     cout<< A <<"\n";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
